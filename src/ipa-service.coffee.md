@@ -3,11 +3,9 @@ IP Access Service
 
 The service is responsible for interaction with the far-end TCP connection. It handles new connections from multiple BTS.
 
-    class ipAccessService
+    module.exports = class ipAccessService
 
       constructor: (@server) ->
-
-        @init()
 
         @server.on 'error', (err) =>
           console.error err
@@ -53,5 +51,3 @@ Higher-level handler for SCCP (over IPA)
       end: ->
         delete @ipaccess_parser
         delete @sccp_parser
-
-    module.exports = ipAccessService
