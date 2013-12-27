@@ -19,8 +19,7 @@ The service is responsible for interaction with the far-end TCP connection. It h
 
         @server.on 'connection', (c) =>
           c.pause()
-          connection = new ipaProtocol c
-          @init connection
+          @init c
           c.resume()
 
 Build the higher layers for the IPA connection.
