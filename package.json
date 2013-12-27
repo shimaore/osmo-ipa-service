@@ -1,6 +1,6 @@
 {
   "name": "osmo-ipa-service",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "An MSC-side IPA Service for the BSC-MSC interface",
   "main": "index.js",
   "scripts": {
